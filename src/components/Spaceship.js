@@ -6,7 +6,7 @@ class Spaceship extends React.Component {
 	render() {
 		return (
 		<div>
-	        <h1> {this.props.name} <h1>  
+	        <h1> {this.props.name} </h1>  
 	        <ul>Specs: 
 	        	<li>Speed: {this.props.speed}</li>
 	        	<li>Colors: {this.props.colors.join(', ')}</li>
@@ -19,7 +19,7 @@ class Spaceship extends React.Component {
 }
 
 Spaceship.defaultProps = {
-  name: 'Spaceship X'
+  name: 'Spaceship X',
   speed: 'slow',
   hasRockets: false,
   colors: ['black', 'red']
